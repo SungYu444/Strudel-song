@@ -17,6 +17,3 @@ Soft, atmospheric piece with gentle nylon guitar and lush reverb in C minor.
 ### Blurry Vibes
 Ethereal soundscape with heavy delay, reverb, and floating melodies.
 
----
-
-Made with ❤️ using [Strudel](https://strudel.cc)
