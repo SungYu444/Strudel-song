@@ -164,22 +164,12 @@ const mid= stack(
   // Drums
   s(` 
      <[jazz ~  ~ [ ~ jazz ] rim ~ jazz ~] [~ [~ jazz] ~ [ ~ jazz ] rim ~ jazz ~]> 
-     `).gain(0.1)
+     `).gain(0.05)
       .slow(2)
       ._pianoroll(),
-  s("rd [ rd ~ rd] rd rd").gain(0.04).slow(1),
+  s("- [ rd ~ rd] - rd").gain(0.02).slow(1),
   s("bd - - - - - - -").gain(0.1),
   s("<~ [~ ~ rd ~]>").lpf(300),
-
-  note("0 3 5 7 0 3 5 2")       
-    .scale("C:minor")
-    .sound("gm_electric_bass_pick:1")
-    .scaleTranspose("<0@4 -3@4 -1@4 -2@4>")
-    .transpose(-12)
-    .gain(0.1)
-    .slow(1.5)
-    .decay(0.5)
-    ._pianoroll ()
 );
 
 const last= stack(
@@ -187,10 +177,10 @@ const last= stack(
 );
 
 arrange(
-  [1, intro],   // 4 cycles of intro
+  [1, intro],  
   [23, first],
   [30, mid],
-  [23, first],
+  [24, first],
   [30, mid],
   [11, first],
   [30, last]
